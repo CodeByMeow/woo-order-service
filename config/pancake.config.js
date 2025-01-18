@@ -1,0 +1,15 @@
+const PANCAKE_CONFIG = {
+	BASE_URL: process.env.PANCAKE_API_URL,
+	API_KEY: process.env.PANCAKE_API_KEY,
+	SHOP_ID: process.env.PANCAKE_SHOP_ID,
+	ENDPOINT: {
+		ORDER: '/don_hang_web'
+	},
+	TIMEOUT: 30000
+}
+
+const PANCAKE_ROUTES = {
+	NEW_ORDER: `${PANCAKE_CONFIG.BASE_URL}/shops/${PANCAKE_CONFIG.SHOP_ID}/crm/${PANCAKE_CONFIG.ENDPOINT.ORDER}/records`
+}
+
+module.exports = { PANCAKE_CONFIG, PANCAKE_ROUTES }
