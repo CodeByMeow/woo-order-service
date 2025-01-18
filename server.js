@@ -10,9 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (_req, res) => {
-	res.status(200).json({
-		data: "server is up and running",
-	})
+	res.status(200).send("server is up and running")
 })
 
 app.use(webhookRouter)

@@ -18,6 +18,6 @@ const orderMetaDataMapping = {
 const requiredFields = ['order_id', 'meta_data']
 
 module.exports = {
-	orderFieldMapping, orderMetaDataMapping, requiredFields
+	orderFieldMapping: orderFieldMapping, orderMetaDataMapping, requiredFields
 }
 

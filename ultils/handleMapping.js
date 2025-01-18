@@ -1,4 +1,4 @@
-const { orderFieldMapping, orderMetaDataMapping } = require('../config/field.config')
+const { orderFieldMapping, orderMetaDataMapping } = require('../config/fields.config')
 
 function transformWebhookData(webhookData) {
 	const metaDataMap = Object.fromEntries(webhookData.meta_data?.map(item => [item.key, item.value]));

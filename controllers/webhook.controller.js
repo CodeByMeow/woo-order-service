@@ -1,4 +1,4 @@
-const { requiredFields } = require("../config/field.config")
+const { requiredFields } = require("../config/fields.config")
 const AppError = require("../ultils/appError")
 const { transformWebhookData } = require("../ultils/handleMapping")
 const { asyncHandler } = require("../ultils/asyncHandler")
